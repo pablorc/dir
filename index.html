@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="favicon.svg" color="#f5c211">
+	<title></title>
+</head>
+
+<body>
+	<li><a href="?Development" data-name="Development">Development</a></li>
+	<li><a href="?Golang">Golang</a></li>
+	<li><a href="?To Read">To read</a></li>
+	<li><a href="?To Watch">Videos</a></li>
+	<script>
+		function printTitle() {
+			var $title = document.getElementsByTagName("title")[0]
+			$title.innerHTML = decodeURI(window.location.search.replace(/^\?/, ""))
+
+		}
+
+		printTitle();
+	</script>
+</body>
+
+</html>
